@@ -1,0 +1,206 @@
+// @use 'var.scss';
+
+// div {
+//     width: 450px;
+//     margin-top: 30px;
+//     background-color: rgb(238, 177, 177);
+
+//     &.merg {
+//         margin-left: 22px;
+//     }
+// }
+
+// @media(min-width:800px) {
+//     div {
+//         &.merg {
+//             margin-left: 35%;
+//         }
+//     }
+// }
+// div{
+//     .top{
+//         padding-left: 130px;
+//     }
+// }
+
+@import "var.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+body {
+    background-color: $color-body !important;
+}
+
+.form {
+    border-radius: 5px;
+    width: $width;
+    background-color: $color;
+    padding: $padding;
+    margin: $margin;
+}
+
+.field-form {
+    padding: $padding;
+   
+    .field {
+        display: block;
+        padding: $padding;
+        margin: $padding;
+        width: 90%;
+        outline: none;
+    }
+}
+
+div {
+    .construction {
+        ul {
+            padding-left: 4*$padding;
+            color: $main-color !important;
+        }
+    }
+}
+
+.check {
+    padding: $padding;
+    margin: $padding;
+}
+.button {
+    .btn {
+        background-color: $btn-color;
+        color: $color;
+        width: 85%;
+        height: 50px;
+        border: none;
+        padding: $btn-padding;
+        margin-left: $btn-padding*2;
+        font-size: $text-size;
+        cursor: $pointer;
+        &:hover{
+            color:$color
+        }
+    }
+
+
+}
+
+input {
+    &::placeholder {
+        font-size: $text-size-placeholder;
+    }
+}
+
+input {
+    &.check {
+        width: 20px;
+        height: 20px;
+        border-radius: 0;
+        padding-right: 0;
+    }
+}
+.error-message {
+    color: red;
+}
+div {
+    &.show2 {
+        color: $btn-color;
+        font-size: $password-text-show ;
+        cursor: $pointer;
+        font-weight: bold;
+    }
+
+    &.merg {
+        position: relative;
+
+        button {
+            &.show {
+                position: absolute;
+                right: 35px;
+                top: 29%;
+                border: none;
+                background-color: transparent;
+                color: $btn-color;
+                font-size: $password-text-show ;
+                cursor: $pointer;
+                font-weight: $font-weight ;
+            }
+        }
+    }
+}
+
+div {
+    &.check {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2px;
+    }
+
+    &.merg1 {
+        position: relative;
+
+        button {
+            &.show2 {
+                position: absolute;
+                right: 35px;
+                top: 29%;
+                border: none;
+                background-color: transparent;
+                color: $btn-color;
+                font-size: $password-text-show ;
+                cursor: $pointer;
+                font-weight: $font-weight ;
+            }
+        }
+    }
+}
+
+div {
+    &.login {
+        height: 355px;
+        padding: 5px;
+    }
+
+}
+
+
+div {
+    &.form-primary {
+        margin: auto;
+    }
+}
+
+.item {
+    color: black;
+    font-weight: bold;
+}
+
+.form-primary {
+    width: 460px;
+    margin-top: 16px;
+}
+
+ul {
+    &.nav-pills {
+        padding: 10px;
+        padding-left: 20%;
+        margin-top: 10px;
+        // margin-bottom: 10px;
+    }
+}
+
+.nav-link {
+    &:active {
+        background-color: transparent;
+    }
+
+    color: black !important;
+    font-weight: bold;
+}
+
+.active {
+    background-color: transparent !important;
+}
