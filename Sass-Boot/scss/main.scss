@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(243, 241, 238);
+}
+div{
+    &.tabs{
+        background-color: white;
+        width:450px;
+        padding: 20px;
+        max-height: 900px;
+        margin: 20px auto;
+        ul{
+            &.nav-pills{
+                margin-left: 120px;
+            }
+        }
+    }
+}
+div{
+    &.flex{
+        display: flex;
+        justify-content: space-between;
+        width:350px;
+    }
+    a{
+        text-decoration: none;
+        color:rgb(14, 77, 177);
+        font-weight: bold;
+        &.link{
+        position: absolute;
+        top:10px;
+        right:37px;
+        }
+    }
+}
+input{
+    display:block;
+    padding: 10px;
+    width:350px;
+    margin-bottom: 25px;
+    outline: none;
+    &#passLogin{
+        margin-bottom: 40px;
+    }
+ 
+}
+div{
+    &.showw{
+    position: relative;
+}}
+div{
+    &.checkbox{
+        display:flex;
+        justify-content: space-between;
+    }
+    label{
+        padding-left: 5px;
+        &.label{
+            padding-left: 15px;
+        }
+    }
+}
+input{
+    &#check{
+        width:20px;
+        height: 20px;       
+ }
+ &#check2{
+    width:30px;
+    height: 30px;
+    margin-top:10px;
+ }
+}
+div{
+    &.tab-pane{
+       margin-left: 37px;
+     margin-top: 30px;
+    }
+}
+button{
+    &.btn1{
+        width:350px;
+        height: 50px;
+        background-color: rgb(14, 77, 177);
+        color: white;
+        font-weight: 600;
+        outline: none;
+        border-radius: 3px;
+        border:none;
+        margin-bottom: 20px;
+        margin-top: 10px;
+       
+    }
+    &.nav-link{
+    color: black;
+    background-color: white;
+    }
+}
+div{
+    button{
+    &.btn1{
+        width:350px;
+        height: 50px;
+        background-color: rgb(14, 77, 177);
+        color: white;
+        font-weight: 600;
+        outline: none;
+        border-radius: 3px;
+        border:none;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}}
+// --------
+
