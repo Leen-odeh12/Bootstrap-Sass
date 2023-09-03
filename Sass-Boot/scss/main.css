@@ -55,6 +55,10 @@ div label.label {
   padding-left: 15px;
 }
 
+input {
+  margin-bottom: 30px;
+  padding: 10px;
+}
 input#check {
   width: 20px;
   height: 20px;
@@ -98,6 +102,23 @@ div button.btn1 {
   border: none;
   margin-bottom: 20px;
   margin-top: 10px;
+}
+
+p.fname, p.lname, p.email-error, p.des {
+  position: absolute;
+  font-size: small;
+}
+p.fname {
+  top: 160px;
+}
+p.lname {
+  top: 235px;
+}
+p.email-error {
+  top: 313px;
+}
+p.des {
+  top: 50px;
 }
 
 .nav-link.active {

@@ -60,6 +60,8 @@ div{
     }
 }
 input{
+    margin-bottom: 30px;
+    padding: 10px;
     &#check{
         width:20px;
         height: 20px;       
@@ -110,6 +112,26 @@ div{
         margin-top: 10px;
     }
 }}
+p{
+    &.fname,&.lname,&.email-error,&.des{
+     position: absolute;
+     font-size: small;
+    }
+ 
+    &.fname{
+     top:160px;
+    }
+    &.lname{
+     top:235px;
+    }
+    &.email-error{
+     top:313px;
+    }
+    &.des{
+     top:50px;
+    }
+ 
+ }
 // --------
 
 
