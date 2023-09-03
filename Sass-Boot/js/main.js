@@ -5,12 +5,7 @@ const emailInput = document.querySelector(".email");
 const passwordInput = document.getElementById("passsLogin");
 const confirmPasswordInput = document.getElementById("passLoginconfirm");
 const togglePasswordLink = document.getElementById("togglePassword");
-const toggleConfirmPasswordLink = document.getElementById(
-  "toggleConfirmPassword"
-);
-{
-  /* <i class="fa-regular fa-eye-slash"></i> */
-}
+const toggleConfirmPasswordLink = document.getElementById("toggleConfirmPassword");
 
 function togglePasswordVisibility(inputElement, toggleLink) {
   if (inputElement.type === "password") {
