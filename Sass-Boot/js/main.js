@@ -127,10 +127,17 @@
             document.querySelector('.des').style.color = 'red';
             passwordInput.style.borderColor = 'red';
             hasError = true;
-        } else {
-            document.querySelector('.des').textContent = "";
-            passwordInput.style.borderColor = '';
         }
+        // else if (
+        //     password.length < 8 ||
+        //     !/[A-Z]/.test(password) || // At least 1 uppercase letter
+        //     !/\d/.test(password) ||    // At least 1 number
+        //     !/[!@#$%^&*()_+[\]{};':"\\|,.<>?~`]/.test(password) // At least 1 special character
+        // ) {
+        //     errorElement.textContent = "Password must include 8 or more characters, at least 1 uppercase letter, 1 number, and 1 special character.";
+        //     errorElement.style.color = 'red';
+        //     passwordInput.style.borderColor = 'red';
+        // } 
         
         if (confirmPasswordInput.value.trim() === '') {
             event.preventDefault();
@@ -153,18 +160,6 @@
             event.preventDefault();
         }
 
-        // function isPasswordValid(password) {
-        //     const regexUpperCase = /[A-Z]/;
-        //     const regexNumber = /[0-9]/;
-        //     const regexSpecial = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/;
     
-        //     return (
-        //         password.length >= 8 &&
-        //         regexUpperCase.test(password) &&
-        //         regexNumber.test(password) &&
-        //         regexSpecial.test(password)
-        //     );
-        // }
-
     });
 
