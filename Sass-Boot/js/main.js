@@ -78,6 +78,7 @@ passwordInput.addEventListener("blur", function () {
     document.querySelector(".des"),
     "Please enter a Password."
   );
+
 });
 
 confirmPasswordInput.addEventListener("blur", function () {
@@ -180,4 +181,28 @@ form.addEventListener("submit", function (event) {
   if (hasError) {
     event.preventDefault();
   }
+});
+
+passwordInput.addEventListener('blur', function () {
+    const password = passwordInput.value.trim();
+    const errorElement = document.querySelector('.des');
+
+    if (password === '') {
+        errorElement.textContent = "Please enter a Password.";
+        errorElement.style.color = 'red';
+    } else if (password.length < 8) {
+        errorElement.textContent = "Password must be at least 8 characters long.";
+        errorElement.style.color = 'red';
+    } else if (!/[A-Z]/.test(password)) {
+        errorElement.textContent = "Password must include at least 1 uppercase letter.";
+        errorElement.style.color = 'red';
+    } else if (!/[0-9]/.test(password)) {
+        errorElement.textContent = "Password must include at least 1 number.";
+        errorElement.style.color = 'red';
+    } else if (!/[$&+,:;=?@#|'<>.^*()%!-]/.test(password)) {
+        errorElement.textContent = "Password must include at least 1 special character.";
+        errorElement.style.color = 'red';
+    } else {
+        errorElement.textContent = "";
+    }
 });
