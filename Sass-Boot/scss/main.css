@@ -98,4 +98,21 @@ div button.btn1 {
   border: none;
   margin-bottom: 20px;
   margin-top: 10px;
+}
+
+.nav-link.active {
+  background-color: transparent !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+.nav-link.active:hover, .nav-link:hover {
+  color: black;
+}
+
+.empty {
+  background-color: black;
+  width: 2px;
+  height: 20px;
+  margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */
