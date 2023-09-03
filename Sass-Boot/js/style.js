@@ -5,19 +5,30 @@ document.addEventListener('DOMContentLoaded', function () {
     const emailLog = document.querySelector('.email-Log');
     const passwordLog = document.querySelector('.password-Log');
 
-    passwordLog.style.fontSize='small';
-    emailLog.style.fontSize='small';
-    passwordLog.style.position='absolute';
-    passwordLog.style.top='50px';
-    emailLog.style.position='absolute';
-    emailLog.style.top='157px';
+    passwordLog.style.fontSize = 'small';
+    emailLog.style.fontSize = 'small';
+    passwordLog.style.position = 'absolute';
+    passwordLog.style.top = '50px';
+    emailLog.style.position = 'absolute';
+    emailLog.style.top = '157px';
 
     loginButton.addEventListener('click', function (event) {
         let hasError = false;
+        const emailValue = emailInput.value.trim();
 
-        if (emailInput.value.trim() === '') {
+        if (emailValue === '') {
             event.preventDefault();
             emailLog.textContent = "Please enter your Email.";
+            emailLog.style.color = 'red';
+            hasError = true;
+        } else if (!emailValue.includes('@')) {
+            event.preventDefault();
+            emailLog.textContent = "Email must contain '@'.";
+            emailLog.style.color = 'red';
+            hasError = true;
+        } else if (/\d/.test(emailValue)) {
+            event.preventDefault();
+            emailLog.textContent = "Please enter a valid Email.";
             emailLog.style.color = 'red';
             hasError = true;
         } else {
@@ -33,9 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
             passwordLog.textContent = '';
         }
 
-        if (hasError) {
-            // Prevent the form submission
-            return false;
+        if (!hasError) {
+            // Form submission logic if no errors
+            // Remove this block if you don't want to submit the form
+            // You can add your form submission code here
+            console.log("Form submitted successfully");
         }
     });
 });
+
