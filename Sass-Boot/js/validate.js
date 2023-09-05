@@ -45,9 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (!hasError) {
-            // Form submission logic if no errors
-            // Remove this block if you don't want to submit the form
-            // You can add your form submission code here
             console.log("Form submitted successfully");
         }
     });
